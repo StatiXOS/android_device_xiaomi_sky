@@ -60,3 +60,9 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
+
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    system

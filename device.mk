@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Audio
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 

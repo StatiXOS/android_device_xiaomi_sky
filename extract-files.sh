@@ -62,6 +62,12 @@ function blob_fixup() {
         vendor/lib64/libhme.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        # Use VNDK 32 libhidlbase
+        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
+
     esac
 }
 

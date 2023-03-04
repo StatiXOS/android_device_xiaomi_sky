@@ -11,8 +11,23 @@ import /vendor/etc/init/init_nfc_sn1xxx.rc
 on early-init
     write /proc/sys/kernel/printk_devkmsg ratelimited
     export MEMTAG_OPTIONS off
+    # configure governor settings
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
+    write /sys/devices/system/cpu/cpu0/cpufreq/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu0/cpufreq/walt/down_rate_limit_us 2000
+
+    # configure governor settings for big big CPU
+    write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor performance
+    write /sys/devices/system/cpu/cpu6/cpufreq/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu6/cpufreq/walt/down_rate_limit_us 20000
 
 on init
+    # Boot time cpuset and stune
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/background/cpus 0-5
+    write /dev/cpuset/system-background/cpus 0-5
+    write /dev/cpuset/restricted/cpus 2-5
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8

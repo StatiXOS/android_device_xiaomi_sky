@@ -82,6 +82,12 @@ $(foreach p, $(call to-upper, $(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 104857600) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+
 # Power
 TARGET_POWER_FEATURE_EXT_LIB := //$(DEVICE_PATH):libpowerfeature_ext_sky
 

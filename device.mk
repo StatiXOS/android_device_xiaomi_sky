@@ -45,49 +45,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin_qssi/audio_policy_configuration.xml
 
-PRODUCT_ODM_PROPERTIES += \
-    aaudio.mmap_policy=1 \
-    vendor.audio.offload.buffer.size.kb=256
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.audio.auto.scenario=true \
-    ro.config.alarm_vol_steps=15 \
-    ro.config.system_vol_steps=15 \
-    ro.config.vc_call_vol_default=9 \
-    ro.config.vc_call_vol_steps=11 \
-    ro.vendor.audio.camera.loopback.support=false \
-    ro.vendor.audio.feature.spatial=7 \
-    ro.vendor.audio.gain.support=true \
-    ro.vendor.audio.soundtrigger.appdefine.cnn.level=45 \
-    ro.vendor.audio.soundtrigger.appdefine.gmm.level=65 \
-    ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55 \
-    ro.vendor.audio.soundtrigger.appdefine.vop.level=10 \
-    ro.vendor.audio.soundtrigger.xanzn.cnn.level=158 \
-    ro.vendor.audio.soundtrigger.xanzn.gmm.level=80 \
-    ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=80 \
-    ro.vendor.audio.soundtrigger.xanzn.vop.level=41 \
-    ro.vendor.audio.soundtrigger.xatx.cnn.level=95 \
-    ro.vendor.audio.soundtrigger.xatx.gmm.level=54 \
-    ro.vendor.audio.soundtrigger.xatx.gmm.user.level=54 \
-    ro.vendor.audio.soundtrigger.xatx.vop.level=0 \
-    ro.vendor.audio.support.sound.id=true
-
-# Bluetooth
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.btstack.enable.lpa=true
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
-    persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
-    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
-    persist.vendor.qcom.bluetooth.scram.enabled=false \
-    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    persist.vendor.service.bdroid.soc.alwayson=true \
-    ro.vendor.bluetooth.csip_qti=true
-
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
@@ -101,11 +58,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
-
-PRODUCT_VENDOR_PROPERTIES += \
-    camera.disable_zsl_mode=1 \
-    ro.camera.enableCamera1MaxZsl=1 \
-    ro.hardware.camera=xiaomi
 
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -128,45 +80,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
     vendor.qti.hardware.memtrack-service
 
-PRODUCT_ODM_PROPERTIES += \
-    persist.sys.sf.color_mode=0 \
-    vendor.display.disable_3d_adaptive_tm=0 \
-    vendor.display.enable_rounded_corner=0 \
-    vendor.display.vds_allow_hwc=true
-
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.defer_refresh_rate_when_off=1 \
-    debug.sf.disable_backpressure=1 \
-    debug.sf.frame_rate_multiple_threshold=90 \
-    persist.sys.sf.native_mode=258 \
-    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api32 \
-    ro.surface_flinger.set_idle_timer_ms=1000 \
-    ro.vendor.display.ai_disp.enable=true \
-    ro.vendor.display.framework_thermal_dimming=true \
-    ro.vendor.display.hwc_thermal_dimming=false \
-    ro.vendor.display.mi_calib.enable=true \
-    ro.vendor.display.nature_mode.enable=true \
-    ro.vendor.histogram.enable=true \
-    ro.vendor.sre.enable=true \
-    ro.vendor.xiaomi.bl.poll=true \
-    vendor.display.enable_fp_monitor=1 \
-    vendor.display.enable_hist_intr=1 \
-    vendor.display.idle_time=0
-
-# DPM
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.dpm.vndr.feature=1 \
-    persist.vendor.dpm.vndr.halservice.enable=1 \
-    persist.vendor.dpm.vndr.idletimer.mode=default
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey \
     libdrm.vendor
-
-PRODUCT_VENDOR_PROPERTIES += \
-    drm.service.enabled=true
 
 # Fastboot
 PRODUCT_PACKAGES += \
@@ -181,14 +99,6 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 $(call inherit-product-if-exists, vendor/xiaomi/firmware/sky/config.mk)
-
-# FRP
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# FUSE
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.fuse.passthrough.enable=true
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -212,10 +122,6 @@ PRODUCT_PACKAGES += \
 # Identity
 PRODUCT_PACKAGES += \
     android.hardware.identity-V3-ndk_platform.vendor
-
-# Incremental FS
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.incremental.enable=1
 
 # Init scripts
 PRODUCT_COPY_FILES += \
@@ -248,9 +154,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.gatekeeper.disable_spu=true
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
@@ -264,11 +167,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
-
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.stagefright.c2inputsurface=-1 \
-    ro.mediaserver.64b.enable=true \
-    vendor.media.omx=0
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -306,10 +204,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-PRODUCT_ODM_PROPERTIES += \
-    vendor.pasr.activemode.enabled=false \
-    vendor.power.pasr.enabled=false
-
 # Platform
 TARGET_BOARD_PLATFORM := parrot
 
@@ -335,12 +229,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan \
     usb
 
-# Radio
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.dynamic_sar=1
-
 # Servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
@@ -359,9 +247,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.sensors.enable.mag_filter=true
-
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
@@ -373,10 +258,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
     vendor.qti.hardware.systemhelper@1.0.vendor
-
-# USB
-PRODUCT_ODM_PROPERTIES += \
-    vendor.usb.use_gadget_hal=0
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \

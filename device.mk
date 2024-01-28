@@ -43,7 +43,52 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin_qssi/audio_policy_configuration.xml
+    $(LOCAL_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin_qssi/audio_policy_configuration.xml \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
+PRODUCT_PACKAGES += \
+    audioadsprpcd \
+    audio.primary.parrot \
+    audio.r_submix.default \
+    audio.usb.default \
+    liba2dpoffload \
+    libaudioroute \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libhfp_pal \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndcardparser \
+    libsndmonitor \
+    libspkrprot \
+    libssrec \
+    libtinycompress \
+    libvolumelistener \
+    sound_trigger.primary.parrot \
+    vendor.qti.hardware.pal@1.0.vendor \
+    vendor.qti.hardware.AGMIPC@1.0.vendor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1.vendor \
+    audio.bluetooth.default \
+    com.dsi.ant@1.0.vendor \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    libldacBT_enc \
+    libldacBT_abr \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    android.hardware.bluetooth.audio@2.1-impl
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
@@ -75,10 +120,41 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # Display / Graphics
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk.vendor \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper-impl-qti-display.xml \
+    libqdutils \
+    libqservice \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.composer-service.rc \
+    vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
-    vendor.qti.hardware.memtrack-service
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.allocator-service.rc \
+    vendor.qti.hardware.display.allocator-service.xml \
+    vendor.qti.hardware.memtrack-service \
+    libsdmcore \
+    libsdmutils \
+    libqdutils \
+    libqdMetaData \
+    libqdMetaData.system \
+    libdisplayconfig \
+    libgralloc.qti \
+    libdisplayconfig.qti \
+    libdisplayconfig.vendor \
+    libdisplayconfig.qti.vendor \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.config.vendor \
+    init.qti.display_boot.sh \
+    init.qti.display_boot.rc
+
+-include vendor/qcom/opensource/lights/lights-vendor-product.mk
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -102,10 +178,14 @@ $(call inherit-product-if-exists, vendor/xiaomi/firmware/sky/config.mk)
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-V1-ndk_platform.vendor
+    android.hardware.gnss-V1-ndk_platform.vendor \
+    android.hardware.gnss-V2-ndk.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
+    $(LOCAL_PATH)/configs/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
+$(call inherit-product-if-exists, hardware/qcom/gps/gps_vendor_product.mk)
 
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -182,6 +262,14 @@ NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # NFC
 TARGET_NFC_SKU := river
+
+# OMX
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc
 
 # Overlays
 PRODUCT_PACKAGES += \

@@ -1,0 +1,4 @@
+# System properties
+
+# fuse
+persist.sys.fuse.passthrough.enable=true

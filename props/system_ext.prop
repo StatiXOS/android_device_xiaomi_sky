@@ -1,0 +1,4 @@
+# System Ext properties
+
+# Bluetooth
+persist.vendor.btstack.enable.lpa=true

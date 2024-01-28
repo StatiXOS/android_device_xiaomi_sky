@@ -1,0 +1,90 @@
+# Vendor properties
+
+# Audio
+persist.vendor.audio.auto.scenario=true
+ro.config.alarm_vol_steps=15
+ro.config.system_vol_steps=15
+ro.config.vc_call_vol_default=9
+ro.config.vc_call_vol_steps=11
+ro.vendor.audio.camera.loopback.support=false
+ro.vendor.audio.feature.spatial=7
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=65
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=158
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=80
+ro.vendor.audio.soundtrigger.xanzn.vop.level=41
+ro.vendor.audio.soundtrigger.xatx.cnn.level=95
+ro.vendor.audio.soundtrigger.xatx.gmm.level=54
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=54
+ro.vendor.audio.soundtrigger.xatx.vop.level=0
+ro.vendor.audio.support.sound.id=true
+
+# Bluetooth
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.service.bdroid.soc.alwayson=true
+ro.vendor.bluetooth.csip_qti=true
+
+# Camera
+camera.disable_zsl_mode=1
+ro.camera.enableCamera1MaxZsl=1
+ro.hardware.camera=xiaomi
+
+# Display
+debug.sf.defer_refresh_rate_when_off=1
+debug.sf.disable_backpressure=1
+debug.sf.frame_rate_multiple_threshold=90
+persist.sys.sf.native_mode=258
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api32
+ro.surface_flinger.set_idle_timer_ms=1000
+ro.vendor.display.ai_disp.enable=true
+ro.vendor.display.framework_thermal_dimming=true
+ro.vendor.display.hwc_thermal_dimming=false
+ro.vendor.display.mi_calib.enable=true
+ro.vendor.display.nature_mode.enable=true
+ro.vendor.histogram.enable=true
+ro.vendor.sre.enable=true
+ro.vendor.xiaomi.bl.poll=true
+vendor.display.enable_fp_monitor=1
+vendor.display.enable_hist_intr=1
+vendor.display.idle_time=0
+
+# DPM
+persist.vendor.dpm.vndr.feature=1
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.idletimer.mode=default
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# Media
+debug.stagefright.c2inputsurface=-1
+ro.mediaserver.64b.enable=true
+vendor.media.omx=0
+
+# Radio
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.add_power_save=1
+persist.vendor.radio.dynamic_sar=1
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true

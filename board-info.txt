@@ -1,1 +1,1 @@
-require board=sky
+require board=sky|river

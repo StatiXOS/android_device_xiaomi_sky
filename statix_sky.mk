@@ -1,0 +1,22 @@
+#
+# Copyright 2014 The Android Open-Source Project
+# Copyright 2024 StatiXOS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit device specific configuration
+$(call inherit-product, device/xiaomi/sky/device.mk)
+
+# Inherit some common StatiX stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
+
+PRODUCT_NAME := statix_sky
+PRODUCT_DEVICE := sky
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := sky
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

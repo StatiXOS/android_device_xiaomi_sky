@@ -2,3 +2,32 @@
 
 # Bluetooth
 persist.vendor.btstack.enable.lpa=true
+
+# GPS
+persist.backup.ntpServer="0.pool.ntp.org"
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.media.recorder-max-base-layer-fps=60
+vendor.mm.enable.qcom_parser=16777215
+
+# Telephony
+DEVICE_PROVISIONED=1
+net.tethering.noprovisioning=true
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.vendor.cne.feature=1
+persist.vendor.data.mode=concurrent
+persist.vendor.dpm.feature=11
+persist.vendor.dpm.idletimer.mode=default
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=33,33
+ro.telephony.sim_slots.count=2
+ro.vendor.use_data_netmgrd=true
+telephony.active_modems.max_count=2
+telephony.lteOnCdmaDevice=1
+
+# WFD
+debug.sf.enable_hwc_vds=0
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0

@@ -153,15 +153,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.enable_hist_intr=1 \
     vendor.display.idle_time=0
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sensor.pickup=xiaomi.sensor.pickup \
-    ro.sensor.pickup.lower.value=2 \
-    ro.sensor.proximity=true
-
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.vndr.feature=1 \
@@ -265,11 +256,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/configs/keylayout/Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ravelin-mtp-snd-card_Button_Jack.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
 # Media
 PRODUCT_PACKAGES += \
@@ -280,13 +267,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.stagefright.c2inputsurface=-1 \
-    ro.mediaserver.64b.enable=true
+    ro.mediaserver.64b.enable=true \
     vendor.media.omx=0
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    vendor/hardware/xiaomi
 
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
@@ -296,8 +283,6 @@ TARGET_NFC_SKU := river
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPASkyFrameworksOverlay \
-    AOSPASkySystemUIOverlay \
     SkyCarrierConfigOverlay \
     SkyFrameworksOverlay \
     SkyGLSettingsProviderOverlay \
@@ -392,11 +377,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_ODM_PROPERTIES += \
     vendor.usb.use_gadget_hal=0
-
-ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.usb.config=mtp,adb
-endif
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \

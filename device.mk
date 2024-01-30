@@ -231,8 +231,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
-# Kernel
-KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+# Kernel Binary
+TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
 # Keymaster
 PRODUCT_PACKAGES += \

@@ -28,4 +28,8 @@ endif
 PRODUCT_COPY_FILES := \
     $(LOCAL_KERNEL):kernel
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

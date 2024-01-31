@@ -1,6 +1,6 @@
 #
-# Copyright 2014 The Android Open-Source Project
-# Copyright 2024 StatiXOS
+# Copyright (c) 2014 The Android Open-Source Project
+# Copyright (c) 2024 StatiXOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -57,3 +57,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_EXT4_SHARE_DUP_BLOCKS := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default

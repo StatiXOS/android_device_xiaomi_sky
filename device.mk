@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# ATrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

@@ -81,11 +81,6 @@ lib64/com.dsi.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Atrace
-vendor/bin/hw/android.hardware.atrace@1.0-service
-vendor/etc/init/android.hardware.atrace@1.0-service.rc
-vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
-
 # Audio
 system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/bin/hw/android.hardware.audio.service_64
@@ -157,9 +152,6 @@ vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 vendor/etc/default_volume_tables.xml
 vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/usb_audio_policy_configuration.xml
-
-# Automotive
-vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti

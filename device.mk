@@ -5,6 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Hardware
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := parrot
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33
 

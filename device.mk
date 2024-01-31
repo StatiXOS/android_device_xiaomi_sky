@@ -1,6 +1,6 @@
 #
-# Copyright 2014 The Android Open-Source Project
-# Copyright 2024 StatiXOS
+# Copyright (c) 2014 The Android Open-Source Project
+# Copyright (c) 2024 StatiXOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,6 +8,13 @@
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := parrot
+
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
+PRODUCT_PACKAGES += \
+    fstab.qcom
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33

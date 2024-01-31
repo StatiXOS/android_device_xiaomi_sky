@@ -1,6 +1,6 @@
 #
-# Copyright 2014 The Android Open-Source Project
-# Copyright 2024 StatiXOS
+# Copyright (c) 2014 The Android Open-Source Project
+# Copyright (c) 2024 StatiXOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #

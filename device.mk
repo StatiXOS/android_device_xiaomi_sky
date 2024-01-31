@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := parrot

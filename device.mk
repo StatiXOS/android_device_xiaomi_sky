@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 33
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/xiaomi/sky-kernel/kernel
 else

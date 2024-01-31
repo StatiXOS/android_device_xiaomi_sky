@@ -1,0 +1,24 @@
+cc_library {
+    name: "libgptutils.sky",
+    vendor: true,
+    recovery_available: true,
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libz",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-D_BSG_FRAMEWORK_KERNEL_HEADERS",
+    ],
+    srcs: [
+        "gpt-utils.cpp",
+        "recovery-ufs-bsg.cpp",
+    ],
+    owner: "qti",
+    header_libs: [
+        "device_kernel_headers",
+    ],
+    export_include_dirs: ["."],
+}

@@ -20,7 +20,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Userdata Checkpointing OTA GC
 PRODUCT_PACKAGES += \
-    checkpoint_gc
+    android.hardware.boot@1.2-impl-qti \
+    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.2-service \
+    checkpoint_gc \
+    otapreopt_script \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
 
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true

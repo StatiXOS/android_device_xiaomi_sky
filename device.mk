@@ -98,14 +98,11 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/xiaomi/sky-kernel/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+# Kernel
+TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
 
-PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \

@@ -91,6 +91,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    wpa_supplicant
 
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

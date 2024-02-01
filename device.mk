@@ -89,4 +89,8 @@ PRODUCT_COPY_FILES := \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

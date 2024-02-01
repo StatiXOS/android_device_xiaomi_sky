@@ -65,4 +65,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    dtbo \
+    recovery \
+    vbmeta \
+    vbmeta_system \
+    vendor_boot \
+    $(BOARD_SKY_DYNAMIC_PARTITIONS_PARTITION_LIST)

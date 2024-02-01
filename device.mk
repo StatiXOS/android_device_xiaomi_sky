@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33
 

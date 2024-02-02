@@ -79,6 +79,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Media
+$(call inherit-product, hardware/qcom-caf/sm8450/media/product.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 

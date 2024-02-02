@@ -49,6 +49,11 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
+
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)

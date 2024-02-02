@@ -132,6 +132,9 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 
+# SEPolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \

@@ -37,6 +37,11 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
 
 # Audio
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+
+# Pick up split makefile
+$(call inherit-product, hardware/qcom-caf/sm8450/audio/configs/parrot/parrot.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl \

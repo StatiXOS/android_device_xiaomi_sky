@@ -161,6 +161,9 @@ TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
 PRODUCT_COPY_FILES += \
     $(TARGET_KERNEL_DIR)/Image:kernel
 
+# Ramdisk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

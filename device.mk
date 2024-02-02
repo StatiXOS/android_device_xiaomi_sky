@@ -78,6 +78,10 @@ $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := parrot

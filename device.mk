@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl
 
+# Display
+$(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
+$(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

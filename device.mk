@@ -181,6 +181,21 @@ TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
 PRODUCT_COPY_FILES += \
     $(TARGET_KERNEL_DIR)/Image:kernel
 
+# Keymaster
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V1-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    libkeymaster_messages.vendor
+
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 

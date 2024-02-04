@@ -141,6 +141,11 @@ PRODUCT_PACKAGES += \
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
+# Networking
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+    libnl
+
 # Overlays
 PRODUCT_PACKAGES += \
     SkyCarrierConfigOverlay \

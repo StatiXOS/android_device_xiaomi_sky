@@ -54,6 +54,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/bin/hw/android.hardware.security.keymint-service-qti)
+            "${PATCHELF}" --add-needed android.hardware.security.rkp-V1-ndk_platform.so "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

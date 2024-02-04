@@ -1,0 +1,13 @@
+# DPM
+persist.vendor.dpm.feature=11
+
+# Heap
+persist.sys.debug.fdtrack_abort_threshold=4096
+persist.sys.debug.fdtrack_enable_threshold=2048
+
+# QSEE
+persist.sys.qseelogd=true
+
+# Radio
+ro.telephony.sim_slots.count=1
+telephony.active_modems.max_count=2

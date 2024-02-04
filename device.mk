@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Data
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)

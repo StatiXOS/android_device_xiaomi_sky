@@ -138,6 +138,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 
+# NDK
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
+
 # Overlays
 PRODUCT_PACKAGES += \
     SkyCarrierConfigOverlay \

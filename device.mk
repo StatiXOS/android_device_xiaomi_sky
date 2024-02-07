@@ -143,6 +143,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Kernel
+TARGET_KERNEL_VERSION ?= 5.10
+TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
+# Keymaster
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    libkeymaster_messages.vendor
+
 # Media
 $(call inherit-product, hardware/qcom-caf/sm8450/media/product.mk)
 
@@ -200,6 +222,9 @@ $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Ramdisk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # Sensors
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -214,37 +239,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
-# Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 33
-
 # Service tracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
-# Kernel
-TARGET_KERNEL_VERSION ?= 5.10
-TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel
-
-PRODUCT_COPY_FILES += \
-    $(TARGET_KERNEL_DIR)/Image:kernel
-
-# Keymaster
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
-
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor \
-    android.hardware.security.rkp-V1-ndk_platform.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
-    libkeymaster_messages.vendor
-
-# Ramdisk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \

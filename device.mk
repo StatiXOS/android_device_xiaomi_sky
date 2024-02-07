@@ -243,6 +243,10 @@ $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# QCC
+PRODUCT_PACKAGES += \
+    libgrpc++_unsecure.vendor
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \

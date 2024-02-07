@@ -211,7 +211,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal
+    android.hardware.sensors@2.1-service.multihal \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33

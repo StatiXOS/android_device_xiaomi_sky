@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Service tracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Kernel
 TARGET_KERNEL_VERSION ?= 5.10
 TARGET_KERNEL_DIR ?= device/xiaomi/sky-kernel

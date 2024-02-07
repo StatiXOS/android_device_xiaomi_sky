@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0.vendor
+
 # Networking
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \

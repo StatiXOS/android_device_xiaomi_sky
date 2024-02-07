@@ -261,6 +261,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
+# USB
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
+
 # Vendor Service Manager
 PRODUCT_PACKAGES += \
     vndservicemanager

@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl \
+    libtinycompress \
     vendor.qti.hardware.pal@1.0.vendor
 
 # Bluetooth

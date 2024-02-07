@@ -139,7 +139,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
+    android.hardware.media.omx@1.0-service \
+    libavservices_minijail.vendor
 
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true

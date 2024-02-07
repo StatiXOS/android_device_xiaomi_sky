@@ -189,6 +189,10 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.3.vendor
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 

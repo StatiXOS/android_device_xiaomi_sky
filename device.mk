@@ -234,6 +234,30 @@ $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper.xml \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils \
+    qti-telephony-utils-prd \
+    qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml
+
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 

@@ -1035,6 +1035,7 @@ vendor/etc/batching.conf
 vendor/etc/gnss.cfg
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so

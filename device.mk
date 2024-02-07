@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# JSON
+PRODUCT_PACKAGES += \
+    libjson
+
 # Media
 $(call inherit-product, hardware/qcom-caf/sm8450/media/product.mk)
 

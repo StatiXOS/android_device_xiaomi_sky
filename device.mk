@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)
 
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.11.vendor \
+    vendor.display.config@2.0.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

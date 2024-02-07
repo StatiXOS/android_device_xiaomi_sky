@@ -193,6 +193,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3.vendor
 
+# Power
+$(call inherit-product, vendor/qcom/opensource/power/power-vendor-board.mk)
+$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 

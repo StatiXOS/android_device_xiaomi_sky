@@ -316,6 +316,9 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor
 
+# Vibrator
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+
 # WiFi
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \

@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service \
     checkpoint_gc \
+    libgptutils.sky \
     otapreopt_script \
     update_engine \
     update_engine_sideload \

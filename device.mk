@@ -157,7 +157,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libcodec2_vndk
 
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true

@@ -118,7 +118,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhwbinder.vendor \
+    libhidltransport.vendor \
+    libhwbinder.vendor
 
 # Hardware
 PRODUCT_USES_QCOM_HARDWARE := true

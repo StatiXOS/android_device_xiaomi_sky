@@ -341,6 +341,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
+    libcld80211 \
     wpa_supplicant
 
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

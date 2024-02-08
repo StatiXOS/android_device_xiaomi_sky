@@ -148,6 +148,7 @@ vendor/lib64/libvibrator.so
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
@@ -1003,6 +1004,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
 vendor/app/CACertService/CACertService.apk

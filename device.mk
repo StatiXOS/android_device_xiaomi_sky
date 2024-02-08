@@ -103,10 +103,8 @@ PRODUCT_PACKAGES += \
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)
-
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@2.0.vendor
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
 # Fastbootd
 PRODUCT_PACKAGES += \

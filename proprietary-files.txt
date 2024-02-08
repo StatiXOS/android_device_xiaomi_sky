@@ -1209,6 +1209,11 @@ vendor/etc/media_profiles_parrot_v1.xml
 vendor/etc/media_profiles_parrot_v2.xml
 vendor/etc/media_profiles_ravelin.xml
 
+# Memtrack
+vendor/bin/hw/vendor.qti.hardware.memtrack-service
+vendor/etc/init/memtrack_qti.rc
+-vendor/etc/vintf/manifest/memtrack_qti.xml
+
 # Modem Manager
 vendor/bin/modemManager
 vendor/etc/init/modemManager.rc

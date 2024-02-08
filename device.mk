@@ -107,6 +107,9 @@ $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-V1-ndk_platform.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

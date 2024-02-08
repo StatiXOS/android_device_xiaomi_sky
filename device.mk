@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     libtinycompress \
+    vendor.qti.hardware.AGMIPC@1.0.vendor \
     vendor.qti.hardware.pal@1.0.vendor
 
 # Bluetooth

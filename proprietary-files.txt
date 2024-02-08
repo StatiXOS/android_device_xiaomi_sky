@@ -1104,11 +1104,9 @@ vendor/bin/init.kernel.post_boot-parrot.sh
 vendor/bin/init.kernel.post_boot-ravelin.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.usb.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/init.qti.media.sh
 vendor/bin/vendor_modprobe.sh
-vendor/etc/init/hw/init.qcom.usb.rc
 vendor/etc/init/hw/init.qti.kernel.rc
 vendor/etc/init/init.qti.media.rc
 

@@ -108,7 +108,8 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-V1-ndk_platform.vendor
+    android.hardware.memtrack-V1-ndk_platform.vendor \
+    vendor.qti.hardware.display.config-V2-ndk_platform.vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \

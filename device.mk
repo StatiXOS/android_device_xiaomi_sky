@@ -279,6 +279,8 @@ PRODUCT_PACKAGES += \
     libgrpc++_unsecure.vendor
 
 # Radio
+$(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \

@@ -62,6 +62,11 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libmctfengine_stub.so
+vendor/lib/libsdsprpc.so
+vendor/lib/libvmmem.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libmctfengine_stub.so
@@ -640,24 +645,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # CVP
 system_ext/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# Display
-lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-system_ext/lib64/vendor.display.color@1.0.so
-system_ext/lib64/vendor.display.color@1.1.so
-system_ext/lib64/vendor.display.color@1.2.so
-system_ext/lib64/vendor.display.color@1.3.so
-system_ext/lib64/vendor.display.postproc@1.0.so
-system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/bin/displayfeature
-vendor/bin/ppd
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
--vendor/etc/vintf/manifest/memtrack_qti.xml
-vendor/etc/snapdragon_color_libs_config.xml
+# DisplayBlobs
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
@@ -669,38 +657,52 @@ vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/displayfeature.default.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/hw/vulkan.adreno.so
 vendor/lib64/libCB.so
-vendor/lib64/libEGL_adreno.so
-vendor/lib64/libGLESv2_adreno.so
+vendor/lib64/libOpenCL.so
 vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
-vendor/lib64/libbacklight-calib.so
-vendor/lib64/libdigital-dimming.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayfeature.so
-vendor/lib64/libdisplayfeatureservice.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libgame_enhance.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
-vendor/lib64/libhdr_backlight_adapter.so
-vendor/lib64/libhdr_stub.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libkcl.so
 vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libllvm-qgl.so
+vendor/bin/feature_enabler_client
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/ppd
+vendor/bin/qdcmss
+vendor/bin/ubwcconvert
+vendor/etc/display/DPU660.xml
+vendor/etc/display/DPU670.xml
+vendor/etc/display/DPU720.xml
+vendor/etc/display/DPU7__.xml
+vendor/etc/display/DPU820.xml
+vendor/etc/display/DPU830.xml
+vendor/etc/display/DPU860.xml
+vendor/etc/display/DPU8__.xml
+vendor/etc/display/DPU9__.xml
+vendor/etc/display/thermallevel_to_fps.xml
+vendor/etc/init/feature_enabler_client.rc
+vendor/etc/init/qdcmss.rc
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib64/libbacklight-calib.so
+vendor/lib64/libcolor-default.so
+vendor/lib64/libdigital-dimming.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
+vendor/lib64/libgame_enhance.so
+vendor/lib64/libhdr_backlight_adapter.so
+vendor/lib64/libhdr_tm.so
 vendor/lib64/libmemutils.so
-vendor/lib64/libq3dtools_adreno.so
+vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqrtrclient.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
 vendor/lib64/libsdm-color.so
@@ -711,19 +713,10 @@ vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.color@1.6.so
-vendor/lib64/vendor.display.color@1.7.so
-vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Display Configs
+product/etc/displayconfig/display_id_4630946796165144705.xml:vendor/etc/displayconfig/display_id_4630946796165144705.xml
+product/etc/displayconfig/display_id_4630946904973289089.xml:vendor/etc/displayconfig/display_id_4630946904973289089.xml
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
 vendor/etc/display/DPU720.xml
@@ -789,6 +782,11 @@ vendor/firmware/a730_zap.b02
 vendor/firmware/a730_zap.elf
 vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
+
+# Display (OSS)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
 
 # DPM
 system_ext/bin/dpmd
@@ -1029,6 +1027,7 @@ vendor/etc/gnss.cfg
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
@@ -1107,6 +1106,7 @@ vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.early_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/init.qti.media.sh
+vendor/bin/init.qti.write.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 

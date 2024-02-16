@@ -71,34 +71,18 @@
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.ir</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConsumerIr</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IConsumerIr/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
         <fqname>@4.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.media.omx</name>
+        <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
-            <name>IOmx</name>
+            <name>INfc</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IOmxStore</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IOmx/default</fqname>
-        <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -647,16 +631,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplayFeature/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.touchfeature</name>

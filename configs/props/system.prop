@@ -93,6 +93,9 @@ ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 ro.launcher.blur.appLaunch=0
 
+# Hardware keys
+qemu.hw.mainkeys=0
+
 # Iorap
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 

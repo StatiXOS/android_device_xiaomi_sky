@@ -98,8 +98,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
 # Data
-PRODUCT_PACKAGES += \
-    librmnetctl
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)

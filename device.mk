@@ -261,6 +261,8 @@ PRODUCT_PACKAGES += \
     libgrpc++_unsecure.vendor
 
 # Radio
+ENABLE_VENDOR_RIL_SERVICE := true
+
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \

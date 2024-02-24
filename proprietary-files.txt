@@ -766,6 +766,11 @@ vendor/firmware/a730_zap.elf
 vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 
+# Display (OSS)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+
 # DPM
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf

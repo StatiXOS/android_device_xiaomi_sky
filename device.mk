@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
 # USB
+TARGET_HAS_DIAG_ROUTER := true
 $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 PRODUCT_COPY_FILES += \

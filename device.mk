@@ -227,7 +227,10 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk
+    libcodec2_vndk \
+    libmm-omxcore \
+    libOmxCore \
+    libplatformconfig
 
 # NDK
 NEED_AIDL_NDK_PLATFORM_BACKEND := true

@@ -7,3 +7,7 @@ ro.logd.size=2M
 
 # QTI
 ro.vendor.qti.va_odm.support=1
+
+# Variant specific props
+import odm/etc/boardid_property/${ro.boot.boardid}.prop
+import odm/etc/build_${ro.boot.boardid}.prop

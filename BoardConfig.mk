@@ -160,6 +160,9 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 113
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_RAMDISK_USE_LZ4 := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 

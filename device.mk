@@ -140,7 +140,8 @@ PRODUCT_COPY_FILES += \
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk_platform.vendor
+    android.hardware.gnss-V1-ndk_platform.vendor \
+    android.hardware.power@1.2.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \

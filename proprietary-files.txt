@@ -677,6 +677,8 @@ vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
 
 # Display Configs
+product/etc/displayconfig/display_id_4630946796165144705.xml:vendor/etc/displayconfig/display_id_4630946796165144705.xml
+product/etc/displayconfig/display_id_4630946904973289089.xml:vendor/etc/displayconfig/display_id_4630946904973289089.xml
 vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
 vendor/etc/display/DPU720.xml

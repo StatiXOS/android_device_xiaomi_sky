@@ -1089,6 +1089,7 @@ vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.early_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/init.qti.media.sh
+vendor/bin/init.qti.write.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 

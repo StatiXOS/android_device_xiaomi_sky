@@ -382,7 +382,16 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
+    hostapd.accept \
+    hostapd.deny \
+    hostapd_cli \
+    hostapd_default.conf \
     libcld80211 \
-    wpa_supplicant
+    libqsap_sdk \
+    libwifi-hal-qcom \
+    libwpa_client \
+    wpa_cli \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

@@ -88,14 +88,14 @@ vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
 vendor/bin/agmcap
 vendor/bin/agmcompressplay
 vendor/bin/agmplay
-vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
 vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
+vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/microphone_characteristics.xml
 vendor/lib64/hw/audio.primary.parrot.so
@@ -136,7 +136,9 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libsndcardparser.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio (FX modules)
 vendor/lib64/soundfx/libasphere.so

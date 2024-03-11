@@ -6,6 +6,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter sky,$(TARGET_DEVICE)),)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 
@@ -125,3 +127,5 @@ $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += \
 	$(IMS_SYMLINKS)
+
+endif

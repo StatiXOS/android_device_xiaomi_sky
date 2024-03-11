@@ -6,8 +6,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-	include $(call all-makefiles-under,$(LOCAL_PATH))
-	include $(CLEAR_VARS)
+include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(CLEAR_VARS)
 
 # A/B builds require us to create the mount points at compile time.
 FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt

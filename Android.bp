@@ -6,3 +6,544 @@
 soong_namespace {
     imports: ["hardware/qcom-caf/bootctrl"],
 }
+
+// GNSS
+install_symlink {
+    name: "symlink_583db770",
+    installed_location: "rfs/apq/gnss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_7b986915",
+    installed_location: "rfs/apq/gnss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_48b3271c",
+    installed_location: "rfs/apq/gnss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_d1a363a6",
+    installed_location: "rfs/apq/gnss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_bff7961f",
+    installed_location: "rfs/apq/gnss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/apq/gnss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_95f8392a",
+    installed_location: "rfs/apq/gnss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// ADSP
+install_symlink {
+    name: "symlink_ba6f2b9a",
+    installed_location: "rfs/mdm/adsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_8b411e7f",
+    installed_location: "rfs/mdm/adsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/lpass",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_0cdd7b21",
+    installed_location: "rfs/mdm/adsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_9a90fa5d",
+    installed_location: "rfs/mdm/adsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_6e14d208",
+    installed_location: "rfs/mdm/adsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/adsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_3ee98a5c",
+    installed_location: "rfs/mdm/adsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_1cb8f930",
+    installed_location: "rfs/msm/adsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_482dfef9",
+    installed_location: "rfs/msm/adsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/lpass",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_f976b601",
+    installed_location: "rfs/msm/adsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_bc3aaf81",
+    installed_location: "rfs/msm/adsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_a7d7ca20",
+    installed_location: "rfs/msm/adsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/adsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_f1b311ef",
+    installed_location: "rfs/msm/adsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// CDSP
+install_symlink {
+    name: "symlink_mdm_cdsp_hlos",
+    installed_location: "rfs/mdm/cdsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_mdm_cdsp_ramdumps",
+    installed_location: "rfs/mdm/cdsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/cdsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_mdm_cdsp_readonly_firmware",
+    installed_location: "rfs/mdm/cdsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_mdm_cdsp_readonly_vendor_firmware",
+    installed_location: "rfs/mdm/cdsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_mdm_cdsp_readwrite",
+    installed_location: "rfs/mdm/cdsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/cdsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_mdm_cdsp_shared",
+    installed_location: "rfs/mdm/cdsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_hlos",
+    installed_location: "rfs/msm/cdsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_ramdumps",
+    installed_location: "rfs/msm/cdsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/cdsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_readonly_firmware",
+    installed_location: "rfs/msm/cdsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_readonly_vendor_firmware",
+    installed_location: "rfs/msm/cdsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_readwrite",
+    installed_location: "rfs/msm/cdsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/cdsp",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_msm_cdsp_shared",
+    installed_location: "rfs/msm/cdsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// IMS symlinks
+install_symlink {
+    name: "symlink_ims_camera_jni",
+    installed_location: "priv-app/ims/lib/arm64",
+    symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+    system_ext_specific: true,
+}
+
+install_symlink {
+    name: "symlink_ims_media_jni",
+    installed_location: "priv-app/ims/lib/arm64",
+    symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+    system_ext_specific: true,
+}
+
+// MPSS
+install_symlink {
+    name: "symlink_df4489a2",
+    installed_location: "rfs/mdm/mpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_8165802e",
+    installed_location: "rfs/mdm/mpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_6338c1e0",
+    installed_location: "rfs/mdm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_f8885901",
+    installed_location: "rfs/mdm/mpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_d85ebfe5",
+    installed_location: "rfs/mdm/mpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/mpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_2d221fb9",
+    installed_location: "rfs/mdm/mpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_ca0daf1d",
+    installed_location: "rfs/msm/mpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_931c6541",
+    installed_location: "rfs/msm/mpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_d65a340f",
+    installed_location: "rfs/msm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_777af57d",
+    installed_location: "rfs/msm/mpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_97e48589",
+    installed_location: "rfs/msm/mpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/mpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_5d90d83e",
+    installed_location: "rfs/msm/mpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// SLPI
+install_symlink {
+    name: "symlink_bc7040c2",
+    installed_location: "rfs/mdm/slpi/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_28283c27",
+    installed_location: "rfs/mdm/slpi/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/slpi",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_95a0eeff",
+    installed_location: "rfs/mdm/slpi/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_1fb77ad0",
+    installed_location: "rfs/mdm/slpi/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_9918bc8a",
+    installed_location: "rfs/mdm/slpi/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/slpi",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_4c3779e8",
+    installed_location: "rfs/mdm/slpi/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_9b79cb37",
+    installed_location: "rfs/msm/slpi/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_de6780dd",
+    installed_location: "rfs/msm/slpi/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/slpi",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_40e4ada6",
+    installed_location: "rfs/msm/slpi/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_ad127487",
+    installed_location: "rfs/msm/slpi/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_fcde208d",
+    installed_location: "rfs/msm/slpi/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/slpi",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_2b4baa95",
+    installed_location: "rfs/msm/slpi/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// TN
+install_symlink {
+    name: "symlink_1bfe052c",
+    installed_location: "rfs/mdm/tn/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_0f0a9614",
+    installed_location: "rfs/mdm/tn/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/tn",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_6f7a4beb",
+    installed_location: "rfs/mdm/tn/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_b2fbbafb",
+    installed_location: "rfs/mdm/tn/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_2e3b23d7",
+    installed_location: "rfs/mdm/tn/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/tn",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_40187556",
+    installed_location: "rfs/mdm/tn/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// WPSS
+install_symlink {
+    name: "symlink_87f642e8",
+    installed_location: "rfs/mdm/wpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_065ff116",
+    installed_location: "rfs/mdm/wpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/wpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_aacaf6fa",
+    installed_location: "rfs/mdm/wpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_b22a03d2",
+    installed_location: "rfs/mdm/wpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_79b0d205",
+    installed_location: "rfs/mdm/wpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/wpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_3899877a",
+    installed_location: "rfs/mdm/wpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_647541c1",
+    installed_location: "rfs/msm/wpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_d7e2eacc",
+    installed_location: "rfs/msm/wpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/wpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_1173b88c",
+    installed_location: "rfs/msm/wpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_d9898bee",
+    installed_location: "rfs/msm/wpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_b5e51fb8",
+    installed_location: "rfs/msm/wpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/wpss",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_faa44a1b",
+    installed_location: "rfs/msm/wpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+    vendor: true,
+}
+
+// Wi-Fi firmware symlinks
+install_symlink {
+    name: "symlink_wlan_fw_adrastea",
+    installed_location: "firmware/wlan/qca_cld/adrastea/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/adrastea/wlan_mac.bin",
+    vendor: true,
+}
+
+install_symlink {
+    name: "symlink_wlan_cfg_adrastea",
+    installed_location: "firmware/wlan/qca_cld/adrastea/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini",
+    vendor: true,
+}

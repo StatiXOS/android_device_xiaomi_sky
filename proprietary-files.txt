@@ -1137,6 +1137,11 @@ vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
 vendor/lib64/libqtikeymint.so
 
+# Keylayouts
+system/usr/keylayout/uinput-fortsense.kl
+system/usr/keylayout/uinput-fpc.kl
+system/usr/keylayout/uinput-goodix.kl
+
 # Limits
 vendor/bin/hw/vendor.qti.hardware.limits@1.1-service
 vendor/etc/init/vendor.qti.hardware.limits-service.rc

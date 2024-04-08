@@ -1280,9 +1280,6 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
-# Payment (IFAA)
-vendor/app/IFAAService/IFAAService.apk
-
 # Payment (Xiaomi)
 vendor/bin/fidoca
 vendor/bin/mlipayd@1.1

@@ -49,6 +49,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 # Pick up split makefile
+TARGET_OVERRIDE_AUDIO_CONFIGS := true
 $(call inherit-product, hardware/qcom-caf/sm8450/audio/configs/parrot/parrot.mk)
 
 PRODUCT_PACKAGES += \
@@ -63,7 +64,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.pal@1.0.vendor
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 
 # Bluetooth

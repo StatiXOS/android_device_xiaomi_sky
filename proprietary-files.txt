@@ -668,15 +668,12 @@ system_ext/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/feature_enabler_client
 vendor/bin/ppd
 vendor/bin/qdcmss
 vendor/bin/ubwcconvert
-vendor/etc/init/feature_enabler_client.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libbacklight-calib.so
-vendor/lib64/libcolor-default.so
 vendor/lib64/libdigital-dimming.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so

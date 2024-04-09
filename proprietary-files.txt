@@ -1511,6 +1511,7 @@ vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 -vendor/etc/vintf/manifest/dataconnection-saidl.xml
 -vendor/etc/vintf/manifest/qtiradio-saidl.xml
+vendor/etc/xiaomi_ecc_list.xml
 -vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/libQtiRilLoadable.so

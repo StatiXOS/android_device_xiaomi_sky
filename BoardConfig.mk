@@ -161,6 +161,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # A/B
 AB_OTA_UPDATER := true

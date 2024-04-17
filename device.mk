@@ -46,10 +46,18 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Audio
-$(call soong_config_set,android_hardware_audio,run_64bit,true)
+PRODUCT_COPY_FILES += \
+    device/xiaomi/sky/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/audio_effects.conf \
+    device/xiaomi/sky/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/audio_effects.xml \
+    device/xiaomi/sky/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/audio_policy_configuration.xml \
+    device/xiaomi/sky/configs/audio/mixer_paths_ravelin_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/mixer_paths_ravelin_idp.xml \
+    device/xiaomi/sky/configs/audio/mixer_paths_ravelin_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/mixer_paths_ravelin_qrd.xml \
+    device/xiaomi/sky/configs/audio/resourcemanager_ravelin_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/resourcemanager_ravelin_idp.xml \
+    device/xiaomi/sky/configs/audio/resourcemanager_ravelin_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/resourcemanager_ravelin_qrd.xml \
+    device/xiaomi/sky/configs/audio/resourcemanager_upd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/resourcemanager_upd.xml
 
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
 # Pick up split makefile
-TARGET_OVERRIDE_AUDIO_CONFIGS := true
 $(call inherit-product, hardware/qcom-caf/sm8450/audio/configs/parrot/parrot.mk)
 
 PRODUCT_PACKAGES += \
@@ -521,5 +529,3 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
-
-$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device specific configuration
 $(call inherit-product, device/xiaomi/sky/device.mk)
+$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
 # Inherit some common StatiX stuff.
 $(call inherit-product, vendor/statix/config/common.mk)

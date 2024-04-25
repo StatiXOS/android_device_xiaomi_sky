@@ -1,2 +1,3 @@
+type sysfs_board_id, fs_type;
 type ufs_block_device, fs_type;
 type vendor_log_device, dev_type;

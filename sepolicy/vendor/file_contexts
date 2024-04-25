@@ -3,3 +3,6 @@
 /data/vendor/fpdump(/.*)?                                                 u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                                 u:object_r:vendor_fingerprint_data_file:s0
 /dev/goodix_fp                                                            u:object_r:vendor_fingerprint_device:s0
+
+# Log
+/dev/last_kmsg                                                            u:object_r:vendor_log_device:s0

@@ -36,3 +36,10 @@ prebuilt_etc {
     src: "ueventd.qcom.rc",
     vendor:true
 }
+
+prebuilt_etc {
+    name: "init.sky.rc",
+    filename: "init.sky.rc",
+    src: "init.sky.rc",
+    vendor:true
+}

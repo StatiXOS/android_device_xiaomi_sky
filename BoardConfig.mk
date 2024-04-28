@@ -62,8 +62,14 @@ DEVICE_MANIFEST_FILE += \
 DEVICE_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
-ODM_MANIFEST_SKUS += river
+ODM_MANIFEST_SKUS += river hceese hcesim hcesim1 hcesim1ese hcesimese
 ODM_MANIFEST_RIVER_FILES := $(DEVICE_PATH)/configs/vintf/manifest_river.xml
+ODM_MANIFEST_HCEESE_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hceese.xml
+ODM_MANIFEST_HCESIM_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesim.xml
+ODM_MANIFEST_HCESIM1_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesim1.xml
+ODM_MANIFEST_HCESIM1ESE_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesim1ese.xml
+ODM_MANIFEST_HCESIMESE_FILES := $(DEVICE_PATH)/configs/vintf/manifest_hcesimese.xml
+
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000

@@ -1,0 +1,5 @@
+# Debug
+persist.dbg.keep_debugfs_mounted  u:object_r:vendor_debug_prop:s0
+
+# Media
+ro.mediaserver.64b.enable u:object_r:vendor_media_prop:s0

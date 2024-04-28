@@ -1,0 +1,19 @@
+on early-init && property:ro.boot.boardid=S88019BP1
+    setprop ro.boot.product.hardware.sku hcesimese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88018PA1
+    setprop ro.boot.product.hardware.sku hcesimese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88029JA1
+    setprop ro.boot.product.hardware.sku hcesim1ese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T
+
+on early-init && property:ro.boot.boardid=S88029EA1
+    setprop ro.boot.product.hardware.sku hcesim1ese
+    setprop ro.vendor.se.type eSE,HCE,UICC
+    setprop ro.vendor.se.chip.model SN100T

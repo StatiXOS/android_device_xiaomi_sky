@@ -1,0 +1,5 @@
+# Debug
+vendor_internal_prop(vendor_debug_prop)
+
+# Media
+vendor_internal_prop(vendor_media_prop)

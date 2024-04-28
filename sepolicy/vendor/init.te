@@ -1,0 +1,3 @@
+allow init debugfs_tracing_debug:dir mounton;
+allow init vendor_log_device:file setattr;
+allow init ufs_block_device:file { open write };

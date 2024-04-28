@@ -1,0 +1,1 @@
+genfscon sysfs /devices/virtual/input/input5/wakeup26 u:object_r:sysfs_wakeup:s0

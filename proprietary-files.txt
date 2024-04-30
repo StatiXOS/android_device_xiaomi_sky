@@ -1403,6 +1403,7 @@ system_ext/etc/public.libraries-qti.txt
 vendor/etc/public.libraries.txt
 
 # QCC
+system_ext/bin/qccsyshal@1.2-service
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so

@@ -859,11 +859,6 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# Dumpstate
-vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
-vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
--vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
-
 # Face
 vendor/bin/hw/android.hardware.biometrics.face@1.0-service.face
 vendor/etc/init/android.hardware.biometrics.face@1.0-service.face.rc

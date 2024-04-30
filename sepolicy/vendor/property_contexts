@@ -3,3 +3,7 @@ persist.dbg.keep_debugfs_mounted  u:object_r:vendor_debug_prop:s0
 
 # Media
 ro.mediaserver.64b.enable u:object_r:vendor_media_prop:s0
+
+# Xiaomi
+ro.miui. u:object_r:vendor_oem_prop:s0
+ro.hardware.chipname u:object_r:vendor_oem_prop:s0

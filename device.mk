@@ -266,6 +266,7 @@ PRODUCT_PACKAGES += \
     SkyINWifiOverlay \
     SkySettingsOverlay \
     SkySystemUIOverlay \
+    SkyTelephonyOverlay \
     SkyWifiOverlay \
     SkyWifiResTargetMainline \
     NoCutoutOverlay

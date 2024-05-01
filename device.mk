@@ -319,6 +319,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 

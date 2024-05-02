@@ -140,6 +140,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
+# Power
+-include vendor/hardware/xiaomi/aidl/xiaomi-touch/xiaomi_touch_product.mk
+
 # Props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop

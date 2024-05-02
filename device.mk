@@ -297,10 +297,16 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
 
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6 \
     android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3 \
     android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1 \
+    libjson \
+    vendor.qti.hardware.systemhelperaidl-V1-ndk
 
 PRODUCT_PACKAGES += \
     extphonelib \

@@ -979,6 +979,7 @@ vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
+system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/edgnss-daemon

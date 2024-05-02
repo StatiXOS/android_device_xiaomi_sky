@@ -6,3 +6,6 @@
 
 # Log
 /dev/last_kmsg                                                            u:object_r:vendor_log_device:s0
+
+# Thermal
+/vendor/bin/mi_thermald                                                   u:object_r:mi_thermald:s0

@@ -270,7 +270,6 @@ service mi_thermald /system/vendor/bin/mi_thermald
     class main
     user root
     group system
-    seclabel u:r:mi_thermald:s0
 
 on property:debug.mmitest.loopback.hsmic_rcv=1
         start loopback_hsmic_rcv

@@ -1,1 +1,1 @@
-allow vendor_sensors sysfs:file { getattr open read };
+allow vendor_sensors sysfs_board_id:file r_file_perms;

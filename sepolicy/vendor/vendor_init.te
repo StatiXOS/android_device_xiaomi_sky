@@ -1,9 +1,17 @@
+# Logs
+allow vendor_init vendor_log_device:file rw_file_perms;
+
+# Props
 get_prop(vendor_init, vendor_debug_prop)
 get_prop(vendor_init, vendor_media_prop)
 set_prop(vendor_init, audio_prop)
-set_prop(vendor_init, bluetooth_prop)
-set_prop(vendor_init, radio_prop)
 set_prop(vendor_init, vendor_debug_prop)
 set_prop(vendor_init, vendor_fp_prop)
 set_prop(vendor_init, vendor_media_prop)
 set_prop(vendor_init, vendor_oem_prop)
+
+# tmpfs
+allow vendor_init tmpfs:dir rw_dir_perms;
+
+# ufs
+allow vendor_init ufs_block_device:file rw_file_perms;

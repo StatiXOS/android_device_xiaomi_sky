@@ -3,6 +3,10 @@ genfscon sysfs /firmware/devicetree/base/project-info/boardid    u:object_r:sysf
 
 # glink
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/power_supply/ucsi-source-psy-soc:qcom,pmic_glink:qcom,ucsi1/type    u:object_r:sysfs_power:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/power_supply/ucsi-source-psy-soc:qcom,pmic_glink:qcom,ucsi1/online  u:object_r:sysfs_power:s0
+
+# Logs
+genfscon proc /last_kmsg u:object_r:vendor_log_device:s0
 
 # Proximity
 genfscon proc /touchscreen/proximity_switch            u:object_r:proc_proximity_ts:s0

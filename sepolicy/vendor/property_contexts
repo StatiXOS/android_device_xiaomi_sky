@@ -10,3 +10,4 @@ odm.ril.radio.status. u:object_r:vendor_radio_prop:s0
 # Xiaomi
 ro.miui. u:object_r:vendor_oem_prop:s0
 ro.hardware.chipname u:object_r:vendor_oem_prop:s0
+persist.backup.ntpServer u:object_r:vendor_oem_prop:s0

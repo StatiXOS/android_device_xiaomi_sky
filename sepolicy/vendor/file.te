@@ -1,5 +1,5 @@
 type sysfs_board_id, fs_type;
 type ufs_block_device, fs_type;
-type vendor_log_device, dev_type;
+type vendor_log_device, proc_type, fs_type;
 type proc_proximity_ts, proc_type, fs_type;
 type mi_thermald, file_type;

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "049786c9_ebccf1e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000047
+      },
+      "writtenOn": "2024-05-05T11:35:46Z",
+      "side": 1,
+      "message": "fixed mi_thermald crashing all the time",
+      "revId": "12fde6d40048186448ef7c9bbc2e9a344d5f488f",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}

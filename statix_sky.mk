@@ -16,6 +16,9 @@ $(call inherit-product, device/xiaomi/sky/device.mk)
 $(call inherit-product, vendor/statix/config/common.mk)
 $(call inherit-product, vendor/statix/config/gsm.mk)
 
+# Temporarily include Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
+
 PRODUCT_NAME := statix_sky
 PRODUCT_DEVICE := sky
 PRODUCT_BRAND := Xiaomi

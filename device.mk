@@ -248,6 +248,7 @@ NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # NFC
 PRODUCT_PACKAGES += \
+    NfcNci \
     android.hardware.nfc@1.2.vendor \
     libchrome.vendor \
     vendor.nxp.hardware.nfc@2.0.vendor

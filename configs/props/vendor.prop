@@ -188,6 +188,8 @@ persist.backup.ntpServer=0.pool.ntp.org
 persist.radio.multisim.config=dsds
 
 # Radio (IMS)
+persist.radio.is_vonr_enabled_0=true
+persist.radio.is_vonr_enabled_1=true
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1

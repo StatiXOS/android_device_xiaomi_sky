@@ -403,6 +403,12 @@ PRODUCT_COPY_FILES += \
 # Sensors
 $(call inherit-product, vendor/hardware/xiaomi/hidl/sensors/sensors_product.mk)
 
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.1-service.xiaomi-multihal \
+    libsensorndkbridge
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \

@@ -14,3 +14,7 @@ genfscon proc /touchscreen/store_data_proximity        u:object_r:proc_proximity
 
 # UFS
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes    u:object_r:ufs_block_device:s0
+
+# Wakeup Nodes
+genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-2/2-0029/wakeup/wakeup                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp@0/wakeup/wakeup                                              u:object_r:sysfs_wakeup:s0

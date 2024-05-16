@@ -191,6 +191,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
+    init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     init.sky.rc \

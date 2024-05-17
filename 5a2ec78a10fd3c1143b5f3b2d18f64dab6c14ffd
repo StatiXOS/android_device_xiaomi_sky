@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "416e8f35_4a25260c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000047
+      },
+      "writtenOn": "2024-05-17T17:35:52Z",
+      "side": 1,
+      "message": "I don\u0027t think these are needed. They serve no purpose.\nSeem redundant to me",
+      "revId": "5a2ec78a10fd3c1143b5f3b2d18f64dab6c14ffd",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+
+ro.product.vendor.brand=Redmi
+ro.product.vendor.name=sky_eea
+ro.product.vendor.device=sky
+ro.vendor.build.fingerprint=Redmi/sky_eea/sky:14/UKQ1.231003.002/V816.0.5.0.UMWEUXM:user/release-keys
+ro.product.vendor.model=23076RN4BI
+ro.product.vendor.marketname=Redmi 12 5G
+ro.product.board=sky
+ro.bootimage.build.fingerprint=Redmi/sky_eea/sky:14/UKQ1.231003.002/V816.0.5.0.UMWEUXM:user/release-keys

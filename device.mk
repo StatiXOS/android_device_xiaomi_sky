@@ -326,6 +326,10 @@ $(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Properties
+PRODUCT_COPY_FILES += \
+
+
 # QCC
 PRODUCT_PACKAGES += \
     libgrpc++_unsecure.vendor

@@ -1,0 +1,16 @@
+
+ro.product.odm.brand=Redmi
+ro.product.odm.name=
+ro.product.odm.device=sky
+ro.odm.build.fingerprint=Redmi//sky:14/UKQ1.231003.002/V816.0.4.0.UMWINXM:user/release-keys
+ro.product.odm.model=23076RA4BC
+ro.product.odm.marketname=Redmi Note 12R
+ro.product.vendor.brand=Redmi
+ro.product.vendor.name=
+ro.product.vendor.device=sky
+ro.vendor.build.fingerprint=Redmi//sky:14/UKQ1.231003.002/V816.0.4.0.UMWINXM:user/release-keys
+ro.product.vendor.model=23076RA4BC
+ro.product.vendor.marketname=Redmi Note 12R
+ro.product.board=sky
+ro.bootimage.build.fingerprint=Redmi//sky:14/UKQ1.231003.002/V816.0.4.0.UMWINXM:user/release-keys
+

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03c5debc_14ff1c1a",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 1000047
+      },
+      "writtenOn": "2024-05-17T17:32:26Z",
+      "side": 1,
+      "message": "Sensor product defines this\nwhat are we missing?",
+      "revId": "67dc062ac174f165a93a46ecb8bae08ad06171b7",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}

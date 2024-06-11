@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Device specific blobs first
+$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
+
 # Board
 TARGET_BOARD_PLATFORM := parrot
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -538,5 +541,3 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
-
-$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)

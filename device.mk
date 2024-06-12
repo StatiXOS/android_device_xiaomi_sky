@@ -57,8 +57,8 @@ $(call inherit-product, hardware/qcom-caf/sm8450/audio/configs/parrot/parrot.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.core-V2.vendor \
+    android.hardware.audio.effect-V2.vendor \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     libtinycompress \

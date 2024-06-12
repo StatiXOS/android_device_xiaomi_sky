@@ -1,3 +1,4 @@
 allow hal_camera_default aac_drc_prop:file open;
 allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default mnt_vendor_file:file { getattr open read };
+set_prop(hal_camera_default, vendor_camera_prop)

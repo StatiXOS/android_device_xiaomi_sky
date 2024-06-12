@@ -379,6 +379,10 @@ PRODUCT_BOOT_JARS += \
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# SQLite
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
+
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor

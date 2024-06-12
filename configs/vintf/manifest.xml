@@ -4,26 +4,31 @@
         manifest.xml
 -->
 <manifest version="4.0" type="device" target-level="6">
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport>hwbinder</transport>
-        <version>7.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@7.0::IDevicesFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio.effect</name>
-        <transport>hwbinder</transport>
-        <version>7.0</version>
-        <interface>
-            <name>IEffectsFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@7.0::IEffectsFactory/default</fqname>
-    </hal>
+  <hal format="aidl">
+    <name>android.hardware.audio.core</name>
+    <version>2</version>
+    <fqname>IModule/default</fqname>
+  </hal>
+  <hal format="aidl">
+    <name>android.hardware.audio.core</name>
+    <version>2</version>
+    <fqname>IModule/r_submix</fqname>
+  </hal>
+  <hal format="aidl">
+    <name>android.hardware.audio.core</name>
+    <version>2</version>
+    <fqname>IModule/bluetooth</fqname>
+  </hal>
+  <hal format="aidl">
+    <name>android.hardware.audio.core</name>
+    <version>2</version>
+    <fqname>IConfig/default</fqname>
+  </hal>
+  <hal format="aidl">
+    <name>android.hardware.audio.effect</name>
+    <version>2</version>
+    <fqname>IFactory/default</fqname>
+  </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>

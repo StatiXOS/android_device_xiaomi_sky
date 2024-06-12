@@ -200,7 +200,8 @@ PRODUCT_PACKAGES += \
 
 # JSON
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjsoncpp.vendor
 
 # Kernel
 TARGET_KERNEL_VERSION ?= 5.10

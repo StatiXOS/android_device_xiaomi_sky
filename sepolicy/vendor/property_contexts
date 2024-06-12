@@ -1,3 +1,6 @@
+# Camera
+vendor.camera. u:object_r:vendor_camera_prop:s0
+
 # Debug
 persist.dbg.keep_debugfs_mounted  u:object_r:vendor_debug_prop:s0
 

@@ -98,6 +98,7 @@ PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
     libc++_shared \
     libcamera2ndk_vendor \
+    libpng.vendor \
     libstdc++_vendor \
     vendor.qti.hardware.camera.aon@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \

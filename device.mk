@@ -324,8 +324,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.3.vendor
 
 # Power
-$(call inherit-product, vendor/qcom/opensource/power/power-vendor-board.mk)
-$(call inherit-product, vendor/qcom/opensource/power/power-vendor-product.mk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.statix-libperfmgr \
+    libperfmgr.vendor \
+    libqti-perfd-client
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -435,6 +440,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/statix/interfaces/power-libperfmgr \
     vendor/hardware/xiaomi
 
 # Symlinks

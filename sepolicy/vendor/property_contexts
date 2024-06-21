@@ -9,6 +9,7 @@ ro.mediaserver.64b.enable u:object_r:vendor_media_prop:s0
 
 # Radio
 odm.ril.radio.status. u:object_r:vendor_radio_prop:s0
+ro.vendor.oem.sno u:object_r:vendor_radio_prop:s0
 
 # Xiaomi
 ro.miui. u:object_r:vendor_oem_prop:s0

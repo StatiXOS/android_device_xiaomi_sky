@@ -1103,6 +1103,9 @@ vendor/lib64/libhdcp2p2prov.so
 vendor/bin/ipacm-diag
 vendor/etc/init/ipacm-diag.rc
 
+# IR
+vendor/lib64/hw/consumerir.default.so
+
 # IRQ Balance
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf

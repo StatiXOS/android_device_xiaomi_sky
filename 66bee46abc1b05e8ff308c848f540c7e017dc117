@@ -34,6 +34,24 @@
       "parentUuid": "338ac19d_d838a1b0",
       "revId": "66bee46abc1b05e8ff308c848f540c7e017dc117",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5aebbd7e_9b637d39",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2024-06-29T19:18:21Z",
+      "side": 1,
+      "message": "he meant to say that labeling the dirs containing the nodes is sufficient. eg. just `wakeup` instead of `wakeup/wakeup` or `wakeup/wakeup7`",
+      "parentUuid": "572ea7f0_7b5c9e5c",
+      "revId": "66bee46abc1b05e8ff308c848f540c7e017dc117",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }

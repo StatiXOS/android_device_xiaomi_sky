@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "338ac19d_d838a1b0",
+        "filename": "sepolicy/vendor/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2024-06-29T12:57:28Z",
+      "side": 1,
+      "message": "You don\u0027t label the numbers after \"wakeup\". \"wakeup\" alone will address those denials",
+      "revId": "66bee46abc1b05e8ff308c848f540c7e017dc117",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}

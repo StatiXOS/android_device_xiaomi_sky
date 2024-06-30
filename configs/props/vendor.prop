@@ -108,7 +108,7 @@ vendor.gralloc.disable_ubwc=0
 vendor.hbm.enable=true
 
 # FM
-vendor.hw.fm.init=0
+vendor.qcom.bluetooth.soc=cherokee
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp

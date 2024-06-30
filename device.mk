@@ -143,7 +143,10 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    FMRadio
+    FM2 \
+    libfmjni \
+    qcom.fmradio \
+    qcom.fmradio.xml
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -185,7 +188,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1.vendor
 
 # IR
-$(call inherit-product, vendor/hardware/xiaomi/aidl/consumerir/consumerir_product.mk)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.example
 
 # Init
 PRODUCT_COPY_FILES += \

@@ -5,5 +5,8 @@
 /data/vendor_de/0/goodix(/.*)?                                            u:object_r:vendor_fingerprint_data_file:s0
 /dev/goodix_fp                                                            u:object_r:vendor_fingerprint_device:s0
 
+# IR
+/dev/ir_spi                                                               u:object_r:vendor_ir_device:s0
+
 # Thermal
 /vendor/bin/mi_thermald                                                   u:object_r:mi_thermald:s0

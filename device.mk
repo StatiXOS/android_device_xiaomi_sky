@@ -141,6 +141,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
     vendor.qti.hardware.display.config-V6-ndk_platform.vendor
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FM2 \
+    libfmjni \
+    qcom.fmradio \
+    qcom.fmradio.xml
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

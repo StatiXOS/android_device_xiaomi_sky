@@ -1180,21 +1180,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.servicetracker</name>
-        <version>1.0-2</version>
-        <interface>
-            <name>IServicetracker</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.qti.hardware.servicetrackeraidl</name>
-        <interface>
-            <name>IServicetracker</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.slmadapter</name>
         <version>1.0</version>
         <interface>

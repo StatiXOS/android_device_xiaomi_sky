@@ -1999,12 +1999,6 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
-# Service tracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/SoterProvisioningTool

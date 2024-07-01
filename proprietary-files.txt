@@ -717,20 +717,6 @@ vendor/firmware/a662_zap.b02
 vendor/firmware/a662_zap.elf
 vendor/firmware/a662_zap.mbn
 vendor/firmware/a662_zap.mdt
-vendor/firmware/a710_sqe.fw
-vendor/firmware/a710_zap.b00
-vendor/firmware/a710_zap.b01
-vendor/firmware/a710_zap.b02
-vendor/firmware/a710_zap.elf
-vendor/firmware/a710_zap.mbn
-vendor/firmware/a710_zap.mdt
-vendor/firmware/a730_sqe.fw
-vendor/firmware/a730_zap.b00
-vendor/firmware/a730_zap.b01
-vendor/firmware/a730_zap.b02
-vendor/firmware/a730_zap.elf
-vendor/firmware/a730_zap.mbn
-vendor/firmware/a730_zap.mdt
 
 # Display (OSS)
 vendor/bin/hw/vendor.qti.hardware.display.composer-service

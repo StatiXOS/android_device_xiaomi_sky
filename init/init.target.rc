@@ -6,6 +6,7 @@
 
 import /vendor/etc/init/hw/init.qti.kernel.rc
 import /vendor/etc/init/init.charge_logger.rc
+import /vendor/etc/init/init_nfc_sn1xxx.rc
 
 on early-init
     write /proc/sys/kernel/printk_devkmsg ratelimited

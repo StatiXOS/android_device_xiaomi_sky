@@ -120,7 +120,6 @@ PRODUCT_PACKAGES += \
 
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-board.mk)
-$(call inherit-product, hardware/qcom-caf/sm8450/display/config/display-product.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
@@ -139,7 +138,30 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V3-ndk_platform.vendor \
     vendor.qti.hardware.display.config-V4-ndk_platform.vendor \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
-    vendor.qti.hardware.display.config-V6-ndk_platform.vendor
+    vendor.qti.hardware.display.config-V6-ndk_platform.vendor \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.graphics.mapper-impl-qti-display.xml \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.allocator-service.rc \
+    vendor.qti.hardware.display.allocator-service.xml \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.composer-service.rc \
+    vendor.qti.hardware.display.composer-service.xml \
+    libsdmcore \
+    libsdmutils \
+    libqdutils \
+    libqdMetaData \
+    libqdMetaData.system \
+    libdisplayconfig \
+    libgralloc.qti \
+    libdisplayconfig.qti \
+    libdisplayconfig.vendor \
+    libdisplayconfig.qti.vendor \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.config.vendor \
+    init.qti.display_boot.sh \
+    init.qti.display_boot.rc
 
 # FM Radio
 PRODUCT_PACKAGES += \

@@ -80,16 +80,10 @@ vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
 vendor/bin/agmcap
 vendor/bin/agmcompressplay
 vendor/bin/agmplay
-vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
 vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/etc/audio_policy_engine_default_stream_volumes.xml
-vendor/etc/audio_policy_engine_product_strategies.xml
-vendor/etc/audio_policy_engine_stream_volumes.xml
-vendor/etc/kvh2xml.xml
-vendor/etc/microphone_characteristics.xml
 vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
@@ -161,7 +155,6 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libvolumelistener.so
-vendor/lib64/libvibrator.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti

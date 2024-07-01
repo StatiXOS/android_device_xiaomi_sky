@@ -1081,13 +1081,6 @@ system/usr/keylayout/uinput-fortsense.kl
 system/usr/keylayout/uinput-fpc.kl
 system/usr/keylayout/uinput-goodix.kl
 
-# Limits
-vendor/bin/hw/vendor.qti.hardware.limits@1.1-service
-vendor/etc/init/vendor.qti.hardware.limits-service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
-vendor/lib64/vendor.qti.hardware.limits@1.0.so
-vendor/lib64/vendor.qti.hardware.limits@1.1.so
-
 # Media
 system_ext/lib64/vendor.qti.hardware.qconfig-V3-ndk.so
 system_ext/lib64/vendor.qti.hardware.qconfig-V4-ndk.so

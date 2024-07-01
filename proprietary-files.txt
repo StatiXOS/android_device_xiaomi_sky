@@ -860,14 +860,6 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# Face
-vendor/bin/hw/android.hardware.biometrics.face@1.0-service.face
-vendor/etc/init/android.hardware.biometrics.face@1.0-service.face.rc
-vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
-vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
-
 # Fingerprint
 system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 vendor/framework/com.fingerprints.extension.jar

@@ -929,9 +929,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS

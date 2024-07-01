@@ -1941,11 +1941,6 @@ vendor/lib64/vendor.qti.qesdhal@1.1.so
 vendor/lib64/vendor.qti.qesdsys-V1-ndk_platform.so
 
 # Sensors configs
-vendor/etc/sensors/config/parrot_default_sensors.json
-vendor/etc/sensors/config/parrot_dynamic_sensors.json
-vendor/etc/sensors/config/parrot_irq.json
-vendor/etc/sensors/config/parrot_power_0.json
-vendor/etc/sensors/config/parrot_qrd_dynamic_sensors.json
 vendor/etc/sensors/config/ravelin_default_sensors.json
 vendor/etc/sensors/config/ravelin_dynamic_sensors.json
 vendor/etc/sensors/config/ravelin_irq.json

@@ -447,6 +447,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/statix/interfaces/power-libperfmgr \
     vendor/hardware/xiaomi
 

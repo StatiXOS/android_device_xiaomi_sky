@@ -27,4 +27,6 @@ echo 0-3 > /dev/cpuset/system-background/cpus
 # Setup runtime schedTune
 echo "walt" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo "walt" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/walt/down_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpu6/cpufreq/walt/down_rate_limit_us
 

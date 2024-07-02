@@ -8,5 +8,8 @@
 # IR
 /dev/ir_spi                                                               u:object_r:vendor_ir_device:s0
 
+# Init
+/vendor/bin/init.sky.post_boot.sh                                         u:object_r:vendor_qti_init_shell_exec:s0
+
 # Thermal
 /vendor/bin/mi_thermald                                                   u:object_r:mi_thermald:s0

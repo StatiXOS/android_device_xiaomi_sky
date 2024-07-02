@@ -444,3 +444,13 @@ on property:dev.bootcomplete=1
     chmod 0440 /sys/class/qcom-battery/cid_status
     chmod 0660 /sys/class/qcom-battery/smart_chg
     chmod 0660 /sys/class/qcom-battery/hifi_connect
+
+service sky-post-boot /vendor/bin/init.sky.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+on property:vendor.post_boot.parsed=1
+    start sky-post-boot

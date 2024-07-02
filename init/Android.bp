@@ -36,3 +36,9 @@ prebuilt_etc {
     src: "ueventd.qcom.rc",
     vendor:true
 }
+
+sh_binary {
+    name: "init.sky.post_boot.sh",
+    src: "init.sky.post_boot.sh",
+    vendor: true,
+}

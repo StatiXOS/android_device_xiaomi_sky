@@ -67,7 +67,20 @@ function blob_fixup() {
             "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
             sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
             ;;
-
+        vendor/etc/audio/sku_ravelin/audio_policy_configuration.xml)
+            sed -i '/<devicePort tagName="BT A2DP \(Out\|Headphones\|Speaker\)"/,/<\/devicePort>/d' "${2}"
+            sed -i '/<devicePort tagName="A2DP In" type="AUDIO_DEVICE_IN_BLUETOOTH_A2DP" role="source"/,/<\/devicePort>/d' "${2}"
+            sed -i '/<route type="mix" sink="BT A2DP \(Out\|Headphones\|Speaker\)"/d' "${2}"
+            sed -i '/sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,haptics output"\/>/d' "${2}"
+            sed -i 's/,A2DP In//g' "${2}"
+            ;;
+        vendor/etc/audio/sku_ravelin_qssi/audio_policy_configuration.xml)
+            sed -i '/<devicePort tagName="BT A2DP \(Out\|Headphones\|Speaker\)"/,/<\/devicePort>/d' "${2}"
+            sed -i '/<devicePort tagName="A2DP In" type="AUDIO_DEVICE_IN_BLUETOOTH_A2DP" role="source"/,/<\/devicePort>/d' "${2}"
+            sed -i '/<route type="mix" sink="BT A2DP \(Out\|Headphones\|Speaker\)"/d' "${2}"
+            sed -i '/sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,haptics output"\/>/d' "${2}"
+            sed -i 's/,A2DP In//g' "${2}"
+            ;;
     esac
 }
 

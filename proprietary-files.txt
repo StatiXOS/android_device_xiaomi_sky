@@ -1406,7 +1406,6 @@ vendor/lib64/libqcrilNrLogger.so
 vendor/lib64/libqcrilNrPbmModule.so
 vendor/lib64/libqcrilNrQtiBus.so
 vendor/lib64/libqcrilNrQtiMutex.so
-vendor/lib64/libqcrilNrSmsModule.so
 vendor/lib64/libqcrilNrSocketModule.so
 vendor/lib64/libqcrilNrVoiceModule.so
 vendor/lib64/libqcrildataaidl.so
@@ -1830,6 +1829,9 @@ system_ext/lib64/vendor.qti.mstatservice@1.0.so|563e00dd5b8c45d63d6a3b304a1411a3
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
 system_ext/priv-app/ims/ims.apk|eb896ad88f5c4d7ae26f6474e7fe4ccff8cc1efd
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0683bd5ee5b9d34da4a55fefa515d676c7f8f9a4
+
+# SMS
+vendor/lib64/libqcrilNrSmsModule.so|eec750187d50e0c6df179d10bd656ee026259f86
 
 # SSR
 vendor/bin/ssr_diag

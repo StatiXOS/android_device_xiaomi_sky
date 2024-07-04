@@ -1,3 +1,4 @@
 allow init debugfs_tracing_debug:dir mounton;
 allow init vendor_log_device:file setattr;
 allow init ufs_block_device:file { open write };
+set_prop(vendor_init, vendor_nfc_mi_prop)

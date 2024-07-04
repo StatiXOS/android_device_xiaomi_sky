@@ -4,5 +4,8 @@ vendor_internal_prop(vendor_debug_prop)
 # Media
 vendor_internal_prop(vendor_media_prop)
 
+# NFC
+vendor_public_prop(vendor_nfc_mi_prop)
+
 # Xiaomi
 vendor_internal_prop(vendor_oem_prop)

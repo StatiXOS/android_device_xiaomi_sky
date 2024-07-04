@@ -7,6 +7,10 @@ persist.dbg.keep_debugfs_mounted  u:object_r:vendor_debug_prop:s0
 # Media
 ro.mediaserver.64b.enable u:object_r:vendor_media_prop:s0
 
+# NFC
+ro.vendor.nfc. u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.se. u:object_r:vendor_nfc_mi_prop:s0
+
 # Radio
 odm.ril.radio.status. u:object_r:vendor_radio_prop:s0
 ro.vendor.oem.sno u:object_r:vendor_radio_prop:s0

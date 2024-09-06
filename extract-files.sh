@@ -85,6 +85,10 @@ function blob_fixup() {
             sed -i '/<!-- Remote Submix Audio HAL -->/i <!-- Bluetooth Audio HAL -->\n<xi:include href="/vendor/etc/bluetooth_audio_policy_configuration.xml"/>' "${2}"
             sed -i -e '/<!-- Bluetooth Audio HAL for hearing aid -->/d' -e '/<xi:include href="\/vendor\/etc\/bluetooth_qti_hearing_aid_audio_policy_configuration.xml"\/>/d' "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
     esac
 }
 

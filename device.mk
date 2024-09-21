@@ -621,6 +621,10 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor
 
+# VNDK Shims
+PRODUCT_PACKAGES += \
+    libhidlbase_shim
+
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 

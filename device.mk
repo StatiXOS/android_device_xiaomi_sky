@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
+
 # Device specific blobs first
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 

@@ -32,7 +32,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0,0 H -28 V 94 H 28 V 0 H 0 Z
+        M 0,0 H -28 V 120 H 28 V 0 H 0 Z
     </string>
 
     <!-- Height of the status bar.
